@@ -1,0 +1,32 @@
+[
+  {
+    "city_name": "Miami",
+    "coutry": "United States",
+    "state": "Florida"
+  },
+  {
+    "city_name": "Orlando",
+    "coutry": "United States",
+    "state": "Florida"
+  },
+  {
+    "city_name": "Las Vegas",
+    "coutry": "United States",
+    "state": "Nevada"
+  },
+  {
+    "city_name": "Los Angeles",
+    "coutry": "United States",
+    "state": "California"
+  },
+  {
+    "city_name": "San Francisco",
+    "coutry": "United States",
+    "state": "California"
+  },
+  {
+    "city_name": "New York",
+    "coutry": "United States",
+    "state": "New York"
+  }
+]
