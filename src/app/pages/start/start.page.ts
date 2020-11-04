@@ -32,10 +32,6 @@ export class StartPage implements OnInit {
 
       });
 
-
-
-
-
   }
 
   onSearchChange( event ){
@@ -44,16 +40,21 @@ export class StartPage implements OnInit {
   }
 
 
-  async showModal(cityName){
+  async showModal(cityName , countryCode){
     const modal = await this.modalController.create({
       /*Se debe poner como argumento la pagina a la que dirigira el modal*/
       component: WeatherPagePage,
       //Here is info that send to the modal
       componentProps: {
         city: cityName,
+        country: countryCode
       }
     });
     await modal.present();
   }
+
+  logScrolling(event){
+    console.log(event);
+  }
 
 }

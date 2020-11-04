@@ -2,15 +2,19 @@
   <ion-toolbar>
     <ion-title>WeatherCities App</ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content class="ion-padding">
 
   <!--Searchbar-->
   <ion-searchbar placeholder="Search a City" inputmode="decimal" type="decimal" 
                  (ionChange)="onSearchChange($event)" [debounce]="250" 
                  showCancelButton="always">
   </ion-searchbar>
+
+
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
 
 
   <ion-list>
@@ -20,7 +24,10 @@
     <!--La $propiedad es la propiedad json por donde se debe buscar-->
     <ion-item *ngFor="let place of places  | filterSearch:search:'city_name' ">
 
-      <span size="1" (click)="showModal(place.city_name)">{{place.city_name}}</span>
+      <ion-avatar slot="start">
+        <img src="../../../assets/avatars/{{place.country_code}}.gif">
+      </ion-avatar>
+      <span size="1" (click)="showModal(place.city_name , place.country_code)">{{place.city_name}}</span>
   
     </ion-item>
   </ion-list>
