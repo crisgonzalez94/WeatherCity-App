@@ -18,27 +18,38 @@ export class WeatherPagePage implements OnInit {
   icono:string;
   weather:WeatherDate;
   city:string;
+  //Var for show the progressbar
+  showLoader: boolean = true;
 
   constructor(private modalController: ModalController ,  private weatherSevice : WeatherService ) { }
 
-  ngOnInit() {
+  ngOnInit(){
+    this.getWeather();
+  }
 
-    //Get the weather , with cityName as param
+  //Get weather from service and api
+  getWeather(){
+    this.showProgressBar();
+
     this.weatherSevice.getWeather(this.city).subscribe( (resp:WeatherDate) => {
-
       this.weather = resp;
 
-
-
-
+      this.hideProgressBar();
     });
 
   }
 
-  close(){
+  closeModal(){
     /*Cerrar Modal sin Argumentos*/
     this.modalController.dismiss();
   }
 
+  //Show and hide progressbar
+  showProgressBar(){
+    this.showLoader = true;
+  }
+  hideProgressBar(){
+    this.showLoader = false;
+  }
 
 }
