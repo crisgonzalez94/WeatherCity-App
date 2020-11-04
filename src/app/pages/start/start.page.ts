@@ -5,13 +5,6 @@ import { PlacesService } from 'src/app/services/places.service';
 import { Observable } from 'rxjs';
 
 
-
-
-
-//Import the interfaces
-import { WeatherDate } from 'src/app/interfaces/interfaces';
-import { Weather } from 'src/app/interfaces/interfaces';
-
 //It page uses a modal for show the weather of chosen city
 import { ModalController } from '@ionic/angular';
 import { WeatherPagePage } from '../weather-page/weather-page.page';
@@ -23,7 +16,6 @@ import { WeatherPagePage } from '../weather-page/weather-page.page';
 })
 export class StartPage implements OnInit {
 
-  weather: WeatherDate;
 
   places: any[];
 
@@ -38,7 +30,6 @@ export class StartPage implements OnInit {
         /*Guardamos los posts en el array de mensajes*/
         this.places = place;
 
-        console.log(this.places);
       });
 
 

@@ -6,8 +6,10 @@
 
 <ion-content class="ion-padding">
 
-  <h5>{{weather.weather.description}}</h5>
-  <h1>{{weather.temp}}</h1>
+  <h5>{{weather.data[0].weather.description}}</h5>
+  <h1>{{weather.data[0].temp}}</h1>
+
+  <ion-icon [name]="icono"></ion-icon>
 
   <!--Salir del modal-->
   <ion-button (click)="close()" expand="block">

@@ -19,13 +19,12 @@
     <!--Al filtro le enviamos la variable de busqueda del search en este caso $busqueda-->
     <!--La $propiedad es la propiedad json por donde se debe buscar-->
     <ion-item *ngFor="let place of places  | filterSearch:search:'city_name' ">
-  
-      <!--Icono-->
-      <!--Nombre del usuario-->
-      <ion-label (click)="showModal(place.city_name)">{{place.city_name}}</ion-label>
+
+      <span size="1" (click)="showModal(place.city_name)">{{place.city_name}}</span>
   
     </ion-item>
   </ion-list>
+
 
 
 </ion-content>
