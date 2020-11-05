@@ -13,16 +13,26 @@
 <ion-content class="ion-padding">
 
   <!--Background view style for transparent-->
-  <video class="background-video" loop="loop" autoplay="autoplay" width="100%">
-    <source src="../../../assets/backgrounds/few-clouds.mp4" type="video/mp4">
+  <video *ngIf="weather.data[0].weather.description == 'Few clouds'" class="background-video" loop="loop" autoplay="autoplay" width="100%">
+    <source src="../../../assets/backgrounds/Few clouds.mp4" type="video/mp4">
   </video>
-
+  <video *ngIf="weather.data[0].weather.description == 'Clear sky'" class="background-video" loop="loop" autoplay="autoplay" width="100%">
+    <source src="../../../assets/backgrounds/Clear sky.mp4" type="video/mp4">
+  </video>
+  <video *ngIf="weather.data[0].weather.description == 'Light rain'" class="background-video" loop="loop" autoplay="autoplay" width="100%">
+    <source src="../../../assets/backgrounds/Light rain.mp4" type="video/mp4">
+  </video>
+  <video *ngIf="weather.data[0].weather.description == 'Overcast clouds'" class="background-video" loop="loop" autoplay="autoplay" width="100%">
+    <source src="../../../assets/backgrounds/Overcast clouds.mp4" type="video/mp4">
+  </video>
 
 
   <ion-progress-bar type="indeterminate" color="primary" *ngIf="showLoader"></ion-progress-bar>
 
   <h5>{{weather.data[0].weather.description}}</h5>
   <h1>{{weather.data[0].temp}} °C</h1>
+
+  {{weather.data[0].weather.description}}
 
   <ion-icon [name]="icono"></ion-icon>
 
