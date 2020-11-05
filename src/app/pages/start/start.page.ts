@@ -53,8 +53,5 @@ export class StartPage implements OnInit {
     await modal.present();
   }
 
-  logScrolling(event){
-    console.log(event);
-  }
 
 }

@@ -1,17 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-  <ion-title>{{city}}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
 
-<ion-content class="ion-padding">
+  <!--Background view style for transparent-->
+  <video class="fondocss" loop="loop" autoplay="autoplay" >
+    <source src="../../../assets/backgrounds/few-clouds.mp4" type="video/mp4">
+  </video>
+
+
 
   <ion-progress-bar type="indeterminate" color="primary" *ngIf="showLoader"></ion-progress-bar>
 
   <h5>{{weather.data[0].weather.description}}</h5>
   <h1>{{weather.data[0].temp}}</h1>
-
-
 
   <ion-icon [name]="icono"></ion-icon>
 
@@ -19,5 +18,8 @@
   <ion-button (click)="closeModal()" expand="block">
     Back
   </ion-button>
+
+
+
 
 </ion-content>

@@ -4,9 +4,10 @@
   </ion-toolbar>
 
   <!--Searchbar-->
-  <ion-searchbar placeholder="Search a City" inputmode="decimal" type="decimal" 
+  <ion-searchbar placeholder="Search a City" search-icon="search-sharp" 
+                 inputmode="decimal" type="name" 
                  (ionChange)="onSearchChange($event)" [debounce]="250" 
-                 showCancelButton="always">
+                 showCancelButton="always" inputmode="search">
   </ion-searchbar>
 
 
