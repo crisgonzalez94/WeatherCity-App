@@ -25,7 +25,7 @@
     <!--La $propiedad es la propiedad json por donde se debe buscar-->
     <ion-item *ngFor="let place of places  | filterSearch:search:'city_name' ">
 
-      <ion-avatar slot="start">
+      <ion-avatar slot="start" (click)="showModal(place.city_name , place.country_code)">
         <img src="../../../assets/avatars/{{place.country_code}}.gif">
       </ion-avatar>
       <span size="1" (click)="showModal(place.city_name , place.country_code)">{{place.city_name}}</span>

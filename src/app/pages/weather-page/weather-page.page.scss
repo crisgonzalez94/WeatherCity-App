@@ -1,12 +1,42 @@
-.fondocss {
+.background-video{
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -100
 }
+//Animation for background
+.background-video{
+  animation-duration: 3s;
+  animation-name: slowlyStart;
+}
+@keyframes slowlyStart {
+  from {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+
+h6{
+  text-align: center;
+}
+h5{
+  font-size: 25px;
+}
+h1{
+  font-size: 100px;
+}
 
 
 //Background ion-content transparent
-ion-content  { --background: transparent;}
+ion-content , ion-toolbar { --background: transparent;}
