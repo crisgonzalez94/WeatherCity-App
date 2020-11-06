@@ -34,11 +34,11 @@ h1{
   font-size: 100px;
 }
 
-//Add borders to texts (shadows)
+/*Add borders to texts (shadows)
 h5 , h1{
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
-
+*/
 
 //Background ion-content transparent
 ion-content , ion-toolbar { --background: transparent;}
