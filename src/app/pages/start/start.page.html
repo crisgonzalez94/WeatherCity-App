@@ -24,7 +24,7 @@
   </ion-toolbar>
 
   <!--Searchbar-->
-  <ion-searchbar placeholder="Search a City" search-icon="search-sharp" 
+  <ion-searchbar placeholder="Search a City or Country" search-icon="search-sharp" 
                  inputmode="decimal" type="name" mode="ios"
                  (ionChange)="onSearchChange($event)" [debounce]="250" 
                  showCancelButton="always" inputmode="search">
@@ -40,7 +40,7 @@
     <!--filterSearch es el nombre de la pipe-->
     <!--Al filtro le enviamos la variable de busqueda del search en este caso $busqueda-->
     <!--La $propiedad es la propiedad json por donde se debe buscar-->
-    <ion-item *ngFor="let place of places  | filterSearch:search:'city_name' ">
+    <ion-item *ngFor="let place of places  | filterSearch:search:'city_name':'country'">
 
       <ion-avatar slot="start" (click)="showModal(place.city_name , place.country_code)">
         <img src="../../../assets/avatars/{{place.country_code}}.gif">

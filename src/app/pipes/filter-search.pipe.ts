@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterSearchPipe implements PipeTransform {
 
-  transform(arreglo: any[] , texto:string = '' , propiedad:string = ''): any {
+  transform(arreglo: any[] , texto:string = '' , firstPropiedad:string = '' , secondPropiedad:string = ''): any {
+
 
     //Si texto esta vacio
     if( texto == ''){
@@ -22,11 +23,13 @@ export class FilterSearchPipe implements PipeTransform {
     texto = texto.toLocaleLowerCase();
 
     //Filtrar busqueda
-    return arreglo.filter(
+    arreglo = arreglo.filter(
       /*Ahora retornamos el filtor (hay que verificar que propiedad 
         se va a filtrar la propiedad name del arreglo)*/
-      item => item[propiedad].toLowerCase().includes(texto)
+      item => item[secondPropiedad].toLowerCase().includes(texto) || item[firstPropiedad].toLowerCase().includes(texto)
     );
+
+    return arreglo;
   }
 
 

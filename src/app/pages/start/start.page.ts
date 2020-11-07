@@ -60,20 +60,18 @@ export class StartPage implements OnInit {
   }
 
 
-openFirst() {
-  this.menu.enable(true, 'first');
-  this.menu.open('first');
-  console.log("Mierda");
-}
-
-openEnd() {
-  this.menu.open('end');
-}
-
-openCustom() {
-  this.menu.enable(true, 'custom');
-  this.menu.open('custom');
-}
+  //Menu functions
+  openFirst() {
+    this.menu.enable(true, 'first');
+    this.menu.open('first');
+  }
+  openEnd() {
+    this.menu.open('end');
+  }
+  openCustom() {
+    this.menu.enable(true, 'custom');
+    this.menu.open('custom');
+  }
 
 
 

@@ -1,55 +1,55 @@
 [
   {
     "city_name": "Miami",
-    "coutry": "United States",
+    "country": "United States",
     "country_code": "US",
     "state": "Florida"
   },
   {
     "city_name": "Orlando",
-    "coutry": "United States",
+    "country": "United States",
     "country_code": "US",
     "state": "Florida"
   },
   {
     "city_name": "Las Vegas",
-    "coutry": "United States",
+    "country": "United States",
     "country_code": "US",
     "state": "Nevada"
   },
   {
     "city_name": "Los Angeles",
-    "coutry": "United States",
+    "country": "United States",
     "country_code": "US",
     "state": "California"
   },
   {
     "city_name": "San Francisco",
-    "coutry": "United States",
+    "country": "United States",
     "country_code": "US",
     "state": "California"
   },
   {
     "city_name": "New York",
-    "coutry": "United States",
+    "country": "United States",
     "country_code": "US",
     "state": "New York"
   },
   {
     "city_name": "Mexico City",
-    "coutry": "Mexico",
+    "country": "Mexico",
     "country_code": "MX",
     "state": "Districto Federal"
   },
   {
     "city_name": "La Habana",
-    "coutry": "Cuba",
+    "country": "Cuba",
     "country_code": "CU",
     "state": "La Habana"
   },
   {
     "city_name": "San Jose",
-    "coutry": "Estados Unidos",
+    "country": "Estados Unidos",
     "country_code": "PR",
     "state": "Puerto Rico"
   },
@@ -58,91 +58,85 @@
 
   {
     "city_name": "Bogota",
-    "coutry": "Colombia",
+    "country": "Colombia",
     "country_code": "CO",
     "state": "Bogota"
   },
   {
     "city_name": "Caracas",
-    "coutry": "Venezuela",
+    "country": "Venezuela",
     "country_code": "VE",
     "state": "Caracas"
   },
   {
     "city_name": "São Paulo",
-    "coutry": "Brasil",
+    "country": "Brazil",
     "country_code": "BR",
     "state": "São Paulo"
   },
   {
     "city_name": "Montevideo",
-    "coutry": "Uruguay",
+    "country": "Uruguay",
     "country_code": "UR",
     "state": "Montevideo"
   },
   {
     "city_name": "Santiago",
-    "coutry": "Chile",
+    "country": "Chile",
     "country_code": "CL",
     "state": "Santiago"
   },
   {
     "city_name": "Lima",
-    "coutry": "Peru",
+    "country": "Peru",
     "country_code": "PE",
     "state": "Lima"
   },
   {
     "city_name": "Quito",
-    "coutry": "Ecuador",
+    "country": "Ecuador",
     "country_code": "EC",
     "state": "Quito"
   },
   {
     "city_name": "Asuncion",
-    "coutry": "Paraguay",
+    "country": "Paraguay",
     "country_code": "PY",
     "state": "Asuncion"
   },
   {
     "city_name": "La paz",
-    "coutry": "Bolivia",
+    "country": "Bolivia",
     "country_code": "BO",
     "state": "La paz"
   },
   {
-    "city_name": "Caracas",
-    "coutry": "Venezuela",
-    "country_code": "VE",
-    "state": "Caracas"
-  },
-  {
     "city_name": "Buenos Aires",
-    "coutry": "Argentina",
+    "country": "Argentina",
     "country_code": "AR",
     "state": "Caracas"
   },
   {
     "city_name": "Cordoba",
-    "coutry": "Argentina",
+    "country": "Argentina",
     "country_code": "AR",
     "state": "Caracas"
   },
   {
     "city_name": "Rosario",
-    "coutry": "Argentina",
+    "country": "Argentina",
     "country_code": "AR",
     "state": "Caracas"
   },
   {
     "city_name": "Mendoza",
-    "coutry": "Argentina",
+    "country": "Argentina",
     "country_code": "AR",
     "state": "Caracas"
   },
   {
     "city_name": "Ushuaia",
-    "coutry": "Argentina",
+    "country": "Argentina",
     "country_code": "AR",
     "state": "Caracas"
   },
@@ -151,49 +145,49 @@
 
   {
     "city_name": "Rome",
-    "coutry": "Italia",
+    "country": "Italia",
     "country_code": "IT",
     "state": "Rome"
   },
   {
     "city_name": "Madrid",
-    "coutry": "España",
+    "country": "España",
     "country_code": "ES",
     "state": "Madrid"
   },
   {
     "city_name": "Barcelona",
-    "coutry": "España",
+    "country": "España",
     "country_code": "ES",
     "state": "Cataluña"
   },
   {
     "city_name": "Kyiv",
-    "coutry": "Ukraine",
+    "country": "Ukraine",
     "country_code": "UA",
     "state": "Kyiv"
   },
   {
     "city_name": "Berlin",
-    "coutry": "Germany",
+    "country": "Germany",
     "country_code": "DE",
     "state": "Berlin"
   },
   {
     "city_name": "Moscow",
-    "coutry": "Russia",
+    "country": "Russia",
     "country_code": "RU",
     "state": "Moscow"
   },
   {
     "city_name": "Paris",
-    "coutry": "France",
+    "country": "France",
     "country_code": "FR",
     "state": "Paris"
   },
   {
     "city_name": "Istanbul",
-    "coutry": "Turkey",
+    "country": "Turkey",
     "country_code": "TR",
     "state": "Tokyo"
   },
@@ -203,19 +197,19 @@
 
   {
     "city_name": "Tokyo",
-    "coutry": "Japan",
+    "country": "Japan",
     "country_code": "JP",
     "state": "Tokyo"
   },
   {
     "city_name": "Bijing",
-    "coutry": "China",
+    "country": "China",
     "country_code": "CN",
     "state": "Beijing"
   },
   {
     "city_name": "Tehran",
-    "coutry": "Iran",
+    "country": "Iran",
     "country_code": "IR",
     "state": "Tehran"
   },
@@ -226,7 +220,7 @@
 
   {
     "city_name": "Johannesburg",
-    "coutry": "South Africa",
+    "country": "South Africa",
     "country_code": "ZA",
     "state": "Cape town"
   },
@@ -236,7 +230,7 @@
 
   {
     "city_name": "Sydney",
-    "coutry": "Australia",
+    "country": "Australia",
     "country_code": "AU",
     "state": "Sydney"
   }
