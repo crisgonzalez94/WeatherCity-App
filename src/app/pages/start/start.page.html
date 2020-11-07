@@ -1,5 +1,25 @@
+<ion-menu side="start" menuId="first" contentId="main" mode="ios">
+  <ion-header>
+    <ion-toolbar color="warning">
+      <ion-title>Main Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Search by countries</ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <h6 id="menuFooterText">www.cristiangonzalez.site</h6>
+  </ion-footer>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+
 <ion-header mode="ios">
   <ion-toolbar>
+    <!--Menu button-->
+    <ion-button mode="ios" color="warning" (click)="openFirst()"><ion-icon name="grid-outline"></ion-icon></ion-button>
     <ion-title>WeatherCities App</ion-title>
   </ion-toolbar>
 
@@ -9,12 +29,9 @@
                  (ionChange)="onSearchChange($event)" [debounce]="250" 
                  showCancelButton="always" inputmode="search">
   </ion-searchbar>
-
-
 </ion-header>
 
 <ion-content class="ion-padding" mode="ios">
-
 
 
 

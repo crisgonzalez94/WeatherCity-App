@@ -29,11 +29,11 @@
 
 h5{
   font-size: 25px;
-  color: yellow;
+  color: #FBD102;
 }
 h1{
   font-size: 100px;
-  color: yellow;
+  color: #FBD102;
 }
 
 
@@ -65,7 +65,7 @@ ion-col{
 #col-6{animation-delay: 2.10s;}
 @keyframes startCol{
   from{
-    opacity: 50%;
+    opacity: 60%;
   }
   to{
     opacity: 0%;
