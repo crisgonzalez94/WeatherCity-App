@@ -29,9 +29,35 @@
 
 h5{
   font-size: 25px;
+  color: yellow;
 }
 h1{
   font-size: 100px;
+  color: yellow;
+}
+
+
+//Style of schedule time
+ion-grid{
+  text-align: center;
+}
+
+ion-col{
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+span{
+  width: 100%;
+}
+.dayText{
+  font-size: 20px;
+}
+.maxMinValue{
+  font-size: 15px;
+}
+.maxMinText{
 }
 
 /*Add borders to texts (shadows)

@@ -1,11 +1,11 @@
-<ion-header>
+<ion-header mode="ios">
   <ion-toolbar>
     <ion-title>WeatherCities App</ion-title>
   </ion-toolbar>
 
   <!--Searchbar-->
   <ion-searchbar placeholder="Search a City" search-icon="search-sharp" 
-                 inputmode="decimal" type="name" 
+                 inputmode="decimal" type="name" mode="ios"
                  (ionChange)="onSearchChange($event)" [debounce]="250" 
                  showCancelButton="always" inputmode="search">
   </ion-searchbar>
@@ -13,7 +13,7 @@
 
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" mode="ios">
 
 
 

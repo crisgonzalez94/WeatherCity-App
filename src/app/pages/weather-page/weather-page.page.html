@@ -1,5 +1,5 @@
 <!-- Header without a border -->
-<ion-header class="ion-no-border">
+<ion-header class="ion-no-border"  mode="ios">
   <ion-toolbar>
 
     <ion-buttons slot="start">
@@ -10,7 +10,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" mode="ios">
 
   <!--Background view style for transparent-->
   <video *ngIf="weather.data[0].weather.description == 'Few clouds'" class="background-video" loop="loop" autoplay="autoplay" width="100%">
@@ -29,14 +29,28 @@
 
   <ion-progress-bar type="indeterminate" color="primary" *ngIf="showLoader"></ion-progress-bar>
 
+  <h6>At this moment:</h6>
   <h5>{{weather.data[0].weather.description}}</h5>
   <h1>{{weather.data[0].temp}} °C</h1>
 
-  {{weather.data[0].weather.description}}
 
-  <ion-icon [name]="icono"></ion-icon>
 
-  
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="2" *ngFor="let day of weekWeather.data.slice(0,6) ; let i = index">
+        <span class="dayText">{{week[i]}}</span><br>
+        <span class="description">{{day.weather.description}}</span><br>
+        <hr>
+        <span class="maxMinText">max</span><br>
+        <span class="maxMinValue">{{day.max_temp}} °C</span><br>
+        <hr>
+        <span class="maxMinText">min</span><br>
+        <span class="maxMinValue">{{day.min_temp}} °C</span><br>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
 
 
 
@@ -44,7 +58,7 @@
 </ion-content>
 
 
-<ion-footer>
+<ion-footer mode="ios">
   <!--Salir del modal-->
   <ion-button (click)="closeModal()" expand="block" color="warning" fill="outline">
     Back
