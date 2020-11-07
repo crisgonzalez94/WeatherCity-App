@@ -40,7 +40,8 @@
 
       <ion-col size="2" *ngFor="let day of weekWeather.data.slice(0,6) ; let i = index">
         <span class="dayText">{{week[i]}}</span><br>
-        <span class="description">{{day.weather.description}}</span><br>
+        <!--Are there icons for weather into assests-->
+        <img src="../../assets/icon/{{day.weather.description}}.png" alt="">
         <hr>
         <span class="maxMinText">max</span><br>
         <span class="maxMinValue">{{day.max_temp}} °C</span><br>
