@@ -38,7 +38,7 @@
   <ion-grid>
     <ion-row>
 
-      <ion-col size="2" *ngFor="let day of weekWeather.data.slice(0,6) ; let i = index">
+      <ion-col size="2" *ngFor="let day of weekWeather.data.slice(0,6) ; let i = index" id="col-{{i}}">
         <span class="dayText">{{week[i]}}</span><br>
         <!--Are there icons for weather into assests-->
         <img src="../../assets/icon/{{day.weather.description}}.png" alt="">

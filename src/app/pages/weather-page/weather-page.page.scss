@@ -41,12 +41,37 @@ h1{
 ion-grid{
   text-align: center;
 }
-
 ion-col{
   background: rgba(255,255,255,0.3);
   border-radius: 5px;
   border: 1px solid black;
+  opacity: 0;
 }
+//Propeties of animations
+ion-col{
+  animation-duration: 2s;
+  animation-name: startCol;
+  animation-direction: reverse;
+  //This do persistent the animation
+  animation-fill-mode: forwards;
+}
+//The animation is aply with delay between cols
+#col-0{animation-delay: 0.30s;}
+#col-1{animation-delay: 0.60s;}
+#col-2{animation-delay: 0.90s;}
+#col-3{animation-delay: 1.20s;}
+#col-4{animation-delay: 1.50s;}
+#col-5{animation-delay: 1.80s;}
+#col-6{animation-delay: 2.10s;}
+@keyframes startCol{
+  from{
+    opacity: 50%;
+  }
+  to{
+    opacity: 0%;
+  }
+}
+
 
 span{
   width: 100%;
@@ -62,12 +87,6 @@ span{
 .maxMinText{
   color: black;
 }
-
-/*Add borders to texts (shadows)
-h5 , h1{
-  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-*/
 
 //Background ion-content transparent
 ion-content , ion-toolbar { --background: transparent;}
