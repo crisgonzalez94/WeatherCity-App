@@ -8,6 +8,9 @@ import { WeatherService } from 'src/app/services/weather.service';
 import { WeatherDate } from 'src/app/interfaces/interfaces';
 import { WeatherWeekDate } from 'src/app/interfaces/interfaces';
 
+//Importar el social sharing
+import { SocialSharing } from '@ionic-native/social-sharing/ngx';
+
 @Component({
   selector: 'app-weather-page',
   templateUrl: './weather-page.page.html',
@@ -32,7 +35,8 @@ export class WeatherPagePage implements OnInit {
   date = new Date;
   week: string[] = [];
 
-  constructor(private modalController: ModalController ,  private weatherSevice : WeatherService) { }
+  //Inyectar el social sharing
+  constructor(private modalController: ModalController ,  private weatherSevice : WeatherService , private socialSharing: SocialSharing) { }
 
   ngOnInit(){
     this.getWeather();
@@ -90,6 +94,18 @@ export class WeatherPagePage implements OnInit {
   }
   hideProgressBar(){
     this.showLoader = false;
+  }
+
+  shareFacebook(){
+    this.socialSharing.shareViaFacebook(`The current weather in ${this.weather.data[0].city_name} is ${this.weather.data[0].temp}°C .`);
+  }
+
+  shareInstagram(){
+    this.socialSharing.shareViaInstagram(`The current weather in ${this.weather.data[0].city_name} is ${this.weather.data[0].temp}°C .` , '../../assets/icon/favicon.png');
+  }
+
+  shareWhatsapp(){
+    this.socialSharing.shareViaWhatsApp(`The current weather in ${this.weather.data[0].city_name} is ${this.weather.data[0].temp}°C .`);
   }
 
 }

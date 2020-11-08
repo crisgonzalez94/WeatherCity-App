@@ -41,7 +41,7 @@
       <ion-col size="2" *ngFor="let day of weekWeather.data.slice(0,6) ; let i = index" id="col-{{i}}">
         <span class="dayText">{{week[i]}}</span><br>
         <!--Are there icons for weather into assests-->
-        <img src="../../assets/icon/{{day.weather.description}}.png" alt="">
+        <img src="../../assets/icon/{{day.weather.description}}.gif" alt="">
         <hr>
         <span class="maxMinText">max</span><br>
         <span class="maxMinValue">{{day.max_temp}} °C</span><br>
@@ -56,12 +56,30 @@
 
 
 
+  <!-- fab placed in the center of the content with a list on each side -->
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button color="warning">
+        <ion-icon name="share-social-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button><ion-icon name="logo-instagram" (click)="shareInstagram()"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="bottom">
+        <ion-fab-button><ion-icon name="logo-facebook" (click)="shareFacebook()"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+      <!--Share on whatsapp-->
+      <ion-fab-list side="start">
+        <ion-fab-button><ion-icon name="logo-whatsapp" (click)="shareWhatsapp()"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+
+
 </ion-content>
 
 
 <ion-footer mode="ios">
-  <!--Salir del modal-->
-  <ion-button (click)="closeModal()" expand="block" color="warning" fill="outline">
-    Back
-  </ion-button>
+
+
+
+
 </ion-footer>
